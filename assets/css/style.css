@@ -161,7 +161,7 @@ body {
   #header {
     transition: all 0.5s;
     z-index: 997;
-    padding: 15px 0;
+    padding-left: 610px;
     background: var(--secondary);
   }
   #header.header-scrolled, #header.header-inner-pages {
