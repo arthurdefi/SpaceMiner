@@ -16,7 +16,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/styleNew.css" rel="stylesheet">
 
   <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
   <script type="text/javascript" src="../code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -62,12 +64,18 @@
   <!--          <a class="nav-link" href="https://t.me/CryptoInsiderEarlyCalls" target="_blank"><img class="nav-logo" id="telegram" alt="" src="assets/img/telegram.svg"></img>Telegram</a>  -->
           </li>
 
-          <li>
+          <!-- <li>
             <a class="nav-link" >
-              <button id="enableMetamask" class="btn connect-btn">Connect</button>
+              <button id="enableMetamask" class="btn connect-btn">Connect <span class="dot" style="margin-top: 5px;"></span></button>
             </a>
-          </li>
+          </li> -->
         </ul>
+        <div style="float:right">
+          <a class="nav-link" >
+            <button id="enableMetamask" class="btn connect-btn">Connect </span></button>
+          </a>
+
+        </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
     </div>
@@ -81,60 +89,141 @@
           Starts in <strong id="start-timer">00:00:00</strong>
         </div>
       </div> -->
+      
       <div class="content-box" data-aos="zoom-in">
-        <div class="row info-container" data-aos="zoom-in">
-          <h1>Welcome to<span class="busd"> SPACEMINERS </span>!</h1>
-          <h2>A smart and sustainable way to grow your BUSD on the Binance Smart Chain.</h2>
-          <h4>
-            <i class="bi-check2-square busd-icon"></i>
-            <span id="daily-rate">0% Daily ~ 0% APR</span>
-          </h4>
-          <h4>
-            <i class="bi-check2-square busd-icon"></i>
-            <span id="daily-compound">0% Daily Compound Bonus</span>
-          </h4>
-          <h4>
-            <i class="bi-check2-square busd-icon"></i>
-            <span id="ref-bonus">0% Referrals</span>
-          </h4>
-          <h4>
-            <i class="bi-check2-square busd-icon"></i>
-            <span>Multiple Lotteries Per Day</span>
-          </h4>
+        
+        
+        <div class="row info-container" style="padding: 0px;" data-aos="zoom-in">
+
+          <div class=" info-container-2 d-flex flex-wrap justify-content-center " >
+            <div class="col-md-2 d-flex align-items-center justify-content-sm-center">
+              <img class="d-flex justify-content-md-start "id="logo-space" src="./assets/img/logo.png"  alt="" width="175" height="175">
+            </div>
+            <div class="col-md-8 col-sm-12 d-flex align-items-center justify-content-center" >
+              <div>
+                <div class="d-flex flex-column ">
+                  <h1 class="text-center text-black">Welcome to</h1>
+                  <span class="busd text-center " style="-webkit-text-stroke: 1px #f89420; color:black; letter-spacing: 2px; margin-left: 5px;font-size: 1.95rem;">SPACEMINERS!</span>
+                  <h2 class="text-center" style="max-width: 328px;">A smart and sustainable way to grow your <span class="busd"  style="color: #f89420; font-weight: 300;">BUSD</span> on the Binance Smart Chain.</h2>
+
+                </div>
+               
+                
+            </div>
+              
+              
+            </div>
+            
+                <span id="wallet-connection-heading">Wallet Connection</span><span class="dot"></span>
+            
+          </div>
+          
+          
+          
+
+          <div class="row stats-row-container " data-aos="zoom-in">
+            
+           
+            <div class="col-md-6" >
+              <h3 class="text-start busd" style="color:#f89420; letter-spacing: 2px; margin-left: 5px;font-size: 2rem;">My Account</h3>
+              <hr>
+              <div class="col-md-2 stat mb-md-2 ">
+                <div class="header"> 
+                  <i class="bi-bank" style="color: var(--token); font-size: 16px;"></i> 
+                  Total<span class="busd"> BUSD </span>Staked<i class="bi bi-question-circle " style="font-size: 12px; color: rgb(198, 255, 252); margin-left: 5px;"></i>
+                  <div>
+                    <strong class="number busd" style="-webkit-text-stroke: 1px #f89420; color:#f89420; letter-spacing: 2px; margin-left: 20px;font-size: 2rem;" id="total-staked">25</strong>
+                  <span class="usd">
+                    ≈ $<span id="total-staked-usd" class="usd" >25 </span> <span class="busd">USD</span>
+                  </span>
+                  </div>
+                  
+                </div>
+                
+                
+              </div>
+              <div class="col-md-2 stat  mb-md-2">
+                <div class="header">
+                  <i class="bi-bank" style="color: var(--token); font-size: 16px;"></i>
+                  Total Referral<span class="busd"> BUSD </span> <i class="bi bi-question-circle " style="font-size: 12px; color: rgb(198, 255, 252); margin-left: 5px;"></i>
+                  <div>
+                    <strong class="number  mb-md-2 busd" style="-webkit-text-stroke: 1px #f89420; color:#f89420; letter-spacing: 2px; margin-left: 20px;font-size: 2rem;" id="total-ref">29.5</strong>
+                  <span class="usd">≈ $
+                    <span id="total-ref-usd" class="usd" >
+                      500 
+                    </span> 
+                    <span class="busd">
+                      USD
+                    </span>
+                  </span>
+                  </div>
+                  
+                </div>
+                
+               
+              </div>
+              <div class="col-md-2 stat  mb-md-2">
+                <div class="header">
+                  <i class="bi-bank" style="color: var(--token); font-size: 16px;"></i>
+                  Contract <span class="busd">BUSD</span> <i class="bi bi-question-circle " style="font-size: 12px; color: rgb(198, 255, 252); margin-left: 5px;"></i>
+                  <div>
+                    <strong id="contract-balance " class="number busd" style="-webkit-text-stroke: 1px #f89420; color:#f89420; letter-spacing: 2px; margin-left: 20px;font-size: 2rem;"">7.5</strong>
+                <span class="usd">
+                  ≈ $<span id="contract-balance-usd" >90 </span> <span class="busd">USD</span>
+                </span>
+
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-12 d-flex justify-content-start">
+                <a href="#mine" class="start-btn">START MINING <i class="bi bi-box-arrow-in-right"></i></a>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 ms-md-5 my-1">
+              <h3 class="text-start busd" style=" color:#f89420;  letter-spacing: 2px; margin-left: 5px;font-size: 2rem;" >Benefits</h3>
+              <hr>
+              <div class="stats mt-md-3">
+                <h4 class="mb-4 mb-sm-0">
+                  <i class="bi bi-check-square-fill icon-custom "></i>
+                  <span id="daily-rate">0% Daily ~ 0% APR</span>
+                </h4>
+                <h4 class="mb-4 mb-sm-0">
+                  <i class="bi bi-check-square-fill icon-custom"></i>
+                  <span id="daily-compound">0% Daily Compound Bonus</span>
+                 
+                </h4>
+                <h4 class="mb-4 mb-sm-0">
+                  <i class="bi bi-check-square-fill icon-custom"></i>
+                  <span id="ref-bonus">0% Referrals</span>
+                </h4>
+                <h4 class="mb-4 mb-sm-0">
+                  <i class="bi bi-check-square-fill icon-custom"></i>
+                  <span id="lotteries"> Multiple Lotteries Per Day</span>
+                </h4>
+              </div>
+              <div class="" style=" text-align: left!important;">
+                <i class="ri-alert-line" style="color: #f89420; font-size: 10px;"></i>
+                <span style="font-weight: 100; font-size: 14px;">
+                  <strong style="color: #f89420;">Note:</strong> Funds that are deposited (including compounds) cannot be withdrawn, however the miner will pay daily dividends and
+                  referrals rewards for the life of the contract. Please use at your own risk. Remember, never invest more than you can afford to lose
+                  and always do your own research!
+                </span>
+              </div>
+              
+             
+            </div>
+            
+          </div>
+          </div>
          </div>
-        <div class="row stats-row-container" data-aos="zoom-in">
-          <div class="col-md-2 stat">
-            <div class="header">
-              Total<span class="busd"> BUSD </span>Staked
-            </div>
-            <strong class="number" id="total-staked">0</strong>
-            <!-- <div class="usd">
-              ≈ $<span id="total-staked-usd" class="usd" >0 </span> USD
-            </div> -->
-          </div>
-          <div class="col-md-2 stat">
-            <div class="header">
-              Total Referral<span class="busd"> BUSD </span>
-            </div>
-            <strong class="number" id="total-ref">0</strong>
-            <!-- <div class="usd">
-              ≈ $<span id="total-ref-usd" class="usd" >0 </span> USD
-            </div> -->
-          </div>
-          <div class="col-md-2 stat">
-            <div class="header">
-              Contract <span class="busd">BUSD</span>
-            </div>
-            <strong id="contract-balance" class="number">0</strong>
-            <!-- <div class="usd">
-              ≈ $<span id="contract-balance-usd" >0 </span> USD
-            </div> -->
-          </div>
-        </div>
+
+        
+       
       </div>
-      <div class="row justify-content-center" data-aos="zoom-in">
-        <a href="#mine" class="mine-btn scrollto">Start Mining</a>
-      </div>
+      
     </div>
   </section><!-- End Hero -->
 
@@ -151,14 +240,13 @@
             </span>
           </div>
         </div>
-        <div class="content-box">
-          <h4>
-            Dashboard
-          </h4>
-          <div class="row stats-row-container">
+        <div class="content-box ">
+          <h3 class="text-start busd" style="color:var(--token); letter-spacing: 2px; margin-left: 5px;font-size: 2rem;">My Dashboard</h3>
+          <hr>
+          <div class="row stats-row-container justify-content-center">
             <div class="col-lg-2 stat">
               <div class="header">
-                <i class="bi-bank"></i>
+                <i class="bi-bank" style=" font-size: 16px;";></i>
                 <span>Initial Deposit</span>
               </div>
               <strong id="initial-deposit" class="number">0</strong>
@@ -182,7 +270,7 @@
                 ≈ $<span id="total-deposit-usd" >0 </span> USD
               </div> -->
             </div>
-            <div class="col-lg-2 stat">
+            <div class="col-md-2 stat">
               <div class="header">
                 <i class="bi-wallet2"></i>
                 Withdrawn
@@ -289,7 +377,7 @@
                     </div>
                     <div>
                       <input class="form-control" id="approve-spend" name="approved-spend" step="1" type="number" value="10">
-                      <button class="btn btn-invest" id="" onclick="approveMiner()" role="button">Approve Spaceminers</button>
+                      <button class="start-btn" style="width: 98%;" id="" onclick="approveMiner()" role="button">Approve Spaceminers</button>
                     </div>
                   </div>
                   <strong style="padding-left: 5px; padding-bottom: 5px";>
@@ -300,7 +388,7 @@
                     </span>
                     <input class="form-control" id="busd-spend" name="buy-miners" onChange="updateBuyPrice()" step="100" type="number" value="10">
                   </strong>
-                  <button class="btn btn-invest" id="buy-eggs-btn" onclick="buyEggs()" role="button" disabled>
+                  <button class="start-btn"  style="width: 98%;" id="buy-eggs-btn" onclick="buyEggs()" role="button" disabled>
                     Hire
                     <span id="eggs-to-buy">0</span>
                     Miners
@@ -350,7 +438,7 @@
                       </button>
                     </div>
                     <div>
-                      <button class="btn btn-reinvest" id="reinvest" onclick="hatchEggs()" role="button" disabled>
+                      <button class="start-btn" style="width: 98%;" id="reinvest" onclick="hatchEggs()" role="button" disabled>
                         Compound
                         <span class="compound">
                           (<span class="compound" id="compound-bonus">+0% bonus</span>)
@@ -374,9 +462,9 @@
     <section id="lottery" class="d-flex align-items-center justify-content-center">
       <div class="container main" data-aos="fade-up">
         <div class="content-box">
-          <h4>
+          <h3 class="busd">
             Lottery
-          </h4>
+          </h3>
           <div class="info-container">
             <div style="padding-left: unset; padding-bottom: 20px">
               <h5>
